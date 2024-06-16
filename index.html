@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aylık Gelir Gider Tablosu</title>
+  <link rel="stylesheet" href="assets/css/incomeAndExpense.css">
+  <script src="assets/js/incomeAndExpense.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="moneyForm">
+      <select name="selectValue">
+        <option value="" name="selectValue" selected disabled>Lütfen İşlem Seçiniz</option>
+
+        <option value="gelir" name="selectValue">Gelir</option>
+        <option value="gider" name="selectValue">Gider</option>
+      </select>
+      <label for="money">Tutar Giriniz</label>
+      <input type="number" name="money">
+      <label for="name">Ad</label>
+      <input type="text" name="name">
+      <button type="submit">Hesapla</button>
+    </form>
+    <button class="clearStorage">Storage i Temizle</button>
+    <button id="addData">Örnek Tablo İçin Tıklayınız</button>
+    <div class="content">
+      <div class="gelir">
+
+        <h1>GELİR</h1>
+        <table class="income">
+          <tr>
+            <th>AD</th>
+            <th>TUTAR</th>
+          </tr>
+        </table>
+        <div class="totalIncome"></div>
+
+      </div>
+      <div class="gider">
+        <h1>GİDER</h1>
+        <table class="expense">
+          <tr>
+            <th>AD</th>
+            <th>TUTAR</th>
+          </tr>
+        </table>
+        <div class="totalExpense"></div>
+        <div class="difference"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

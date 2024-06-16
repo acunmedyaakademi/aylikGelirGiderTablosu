@@ -1,0 +1,22 @@
+.moneyForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+table {
+  border: 1px solid black;
+}
+
+table th {
+  border: 1px solid black;
+}
+
+table td {
+  border: 1px solid black;
+}
